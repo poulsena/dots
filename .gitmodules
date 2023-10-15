@@ -1,0 +1,9 @@
+[submodule ".local/src/dwm"]
+	path = .local/src/dwm
+	url = git@github.com:poulsena/dwm.git
+[submodule ".local/src/st"]
+	path = .local/src/st
+	url = git@github.com:poulsena/st.git
+[submodule ".local/src/dmenu"]
+	path = .local/src/dmenu
+	url = git@github.com:poulsena/dmenu.git
