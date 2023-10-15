@@ -28,6 +28,7 @@ alias zsh='nvim ~/.zshrc'
 alias p='sudo pacman'
 alias update='yay -Syu'
 alias rr='cd ~/.local/src'
+alias gs="git status"
 
 # Mozilla smooth scrolling
 export MOZ_USE_XINPUT2=1
