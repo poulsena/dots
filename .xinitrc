@@ -1,3 +1,1 @@
-#!/bin/sh
-
-. ~/.xprofile
+/home/andr/.config/x11/xinitrc
