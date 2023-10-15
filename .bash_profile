@@ -1,8 +1,1 @@
-#
-# ~/.bash_profile
-#
-
-[[ -f ~/.bashrc ]] && . ~/.bashrc
-
-startx
-. "$HOME/.cargo/env"
+/home/andr/.config/shell/bash_profile
