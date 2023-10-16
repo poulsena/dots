@@ -4,7 +4,7 @@ xwallpaper --output DP-4 --center .config/bg
 nvidia-settings --load-config-only
 
 # Auto start programs
-autostart="xcompmgr numlockx"
+autostart="xcompmgr numlockx remaps"
 
 for program in $autostart; do
 	pidof -sx "$program" || "$program" &
