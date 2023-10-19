@@ -1,10 +1,5 @@
-# Screen and wallpaper
-xrandr --output DP-4 --mode 3440x1440 --rate 165
-xwallpaper --output DP-4 --center .config/bg
-nvidia-settings --load-config-only
-
 # Auto start programs
-autostart="xcompmgr numlockx remaps"
+autostart="xcompmgr numlockx screensettings defaultapplications remaps"
 
 for program in $autostart; do
 	pidof -sx "$program" || "$program" &
