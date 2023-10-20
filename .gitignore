@@ -1,6 +1,9 @@
 .cache
 .mozilla
 .npm
+.nvm
+.cargo
+.bun
 .rustup
 .ssh
 Downloads
