@@ -2,6 +2,10 @@
 
 Dot files for my suckless setup.
 
+## Theme
+
+[Gruvbox](https://aur.archlinux.org/packages/gruvbox-material-gtk-theme-git)
+
 ## Dependencies/Programs
 
 - [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#arch-linux)
