@@ -1,7 +1,7 @@
 # Set dwm status bar
 while true
 do
-    xsetroot -name "$(date +"%a %b %d %H:%M")"
+    xsetroot -name "Disk: $(df -h / | awk 'NR==2 {sub(/%/, "", $5); print $5}')% | $(date +"%a %b %d %H:%M")"
     sleep 1
 done &
 
