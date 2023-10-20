@@ -1,9 +1,7 @@
-.bun
 .cache
 .cargo
 .mozilla
 .npm
-.nvm
 .rustup
 .ssh
 Downloads
@@ -19,6 +17,6 @@ go
 .zcompdump*
 .zsh_history
 .zshenv
-.oh-my-zsh
 OneDrive
 GoogleDrive
+VirtualBox VMs
