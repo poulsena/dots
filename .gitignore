@@ -1,5 +1,4 @@
 .cache
-.cargo
 .mozilla
 .npm
 .rustup
