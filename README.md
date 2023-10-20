@@ -32,5 +32,5 @@ Uses custom builds:
 To clone with submodules use
 
 ```bash
-git clone --recurse-submodules -j$(nproc) git@github.com:poulsena/dots.git
+git clone --recurse-submodules -j"$(nproc)" git@github.com:poulsena/dots.git
 ```
