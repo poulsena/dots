@@ -1,8 +1,13 @@
 # Auto start programs
-autostart="xcompmgr numlockx screensettings defaultapplications remaps"
+autostart="xcompmgr numlockx screensettings defaultapplications remaps lxresources"
 
 for program in $autostart; do
 	pidof -sx "$program" || "$program" &
 done >/dev/null 2>&1
+
+# Load Xresources
+xrdb ~/.Xresources
+
+[ -n "$xrdbpid" ] && wait "$xrdbpid"
 
 . ~/.config/shell/startupscripts/startdwm
