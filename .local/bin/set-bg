@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm ~/.config/bg
+ln "$1" ~/.config/bg
+xwallpaper --output DP-4 --center ~/.config/bg

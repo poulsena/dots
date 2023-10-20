@@ -1,3 +1,15 @@
+#!/bin/sh
+
 xrandr --output DP-4 --mode 3440x1440 --rate 165
-xwallpaper --output DP-4 --center ~/.config/bg
+
+# Set random image as wallpaper
+wallpaper_dir="/home/andr/.config/wallpapers"
+random_image=$(find "$wallpaper_dir" -type f | shuf -n 1)
+if [ -n "$random_image" ]; then
+	set-bg "$random_image"
+else
+	# Use old wallpaper
+	xwallpaper --output DP-4 --center ~/.config/bg
+fi
+
 nvidia-settings --load-config-only
