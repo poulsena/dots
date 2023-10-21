@@ -30,6 +30,8 @@ alias update='yay -Syu'
 alias rr='cd ~/.local/src'
 alias gs="git status"
 alias lg="lazygit"
+alias image="nsxiv"
+
 
 # Mozilla smooth scrolling
 export MOZ_USE_XINPUT2=1
