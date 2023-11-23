@@ -23,3 +23,6 @@ OneDrive
 GoogleDrive
 VirtualBox VMs
 .oh-my-zsh
+.vscode-oss
+.pki
+.yarnrc
