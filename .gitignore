@@ -26,3 +26,4 @@ VirtualBox VMs
 .vscode-oss
 .pki
 .yarnrc
+.docker
