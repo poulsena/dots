@@ -31,7 +31,7 @@ alias rr='cd ~/.local/src'
 alias gs="git status"
 alias lg="lazygit"
 alias image="nsxiv"
-alias code="codium . && exit"
+alias code="code-insiders"
 
 
 # Mozilla smooth scrolling
