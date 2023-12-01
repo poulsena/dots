@@ -26,3 +26,7 @@ VirtualBox VMs
 .pki
 .yarnrc
 .docker
+.vscode-insiders
+dockertoken.txt
+.w3m
+.gnupg

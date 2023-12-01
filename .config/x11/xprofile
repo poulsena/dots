@@ -11,3 +11,4 @@ xrdb ~/.Xresources
 [ -n "$xrdbpid" ] && wait "$xrdbpid"
 
 . ~/.config/shell/startupscripts/startdwm
+. ~/.config/shell/startupscripts/keyringinit
