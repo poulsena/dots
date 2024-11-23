@@ -1,0 +1,47 @@
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="clean"
+
+plugins=(git fast-syntax-highlighting)
+
+source $ZSH/oh-my-zsh.sh
+
+# Histoy in cache directory
+HISTSIZE=10000000
+SAVEHIST=10000000
+HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/history"
+
+# Auto/tab completion
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)		# Include hidden files.
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias vi='nvim'
+alias vim='nvim'
+alias cf='cd ~/.config'
+alias zshrc='nvim ~/.zshrc'
+alias zsh='nvim ~/.zshrc'
+alias p='paru'
+alias gs="git status"
+alias code="code-insiders"
+alias purge="p -Qdtq | p -Rns -"
+alias lg="lazygit"
+
+
+# Mozilla smooth scrolling
+export MOZ_USE_XINPUT2=1
+
+
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
+source /usr/share/nvm/init-nvm.sh
+
+# .local/bin scripts
+export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
